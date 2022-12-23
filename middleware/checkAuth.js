@@ -1,7 +1,7 @@
 const jwt = require("jsonwebtoken");
 
 module.exports = async (req, res, next) => {
-    const token = req.header('x-auth-token')
+    const token = req.header('token')
 
     // CHECK IF WE EVEN HAVE A TOKEN
     if(!token){
