@@ -1,0 +1,28 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.input-style {
+    color: white;
+    background-color: #356494;
+    text-align: initial;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%;
+    width: 80%;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.text-style{
+    color: red;
+    font-size: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
