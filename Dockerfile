@@ -1,8 +1,8 @@
 FROM ubuntu
-WORKDIR /usr/src/app
-COPY package*.json ./
-RUN npm install
-COPY . .
-
-EXPOSE 3000
-CMD [ "apache2ctl", "-D", "FOREGROUND" ]
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt-get update
+RUN apt-get install apache2 -y
+RUN apt-get install apache2-utils -y
+RUN apt-get clean
+EXPOSE 80
+CMD ["apache2ctl","-D", "FOREGROUND"]
