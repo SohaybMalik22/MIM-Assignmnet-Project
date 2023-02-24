@@ -32,7 +32,7 @@ jobs:
 
       - name: Deploy to AWS ECS
         id: deploy-ecs
-        uses: aws-actions/aws-ecs-deploy@v2
+        uses: aws-actions/aws-ecs-deploy@develop/backend
         with:
           cluster: my-ecs-cluster
           service: my-ecs-service
